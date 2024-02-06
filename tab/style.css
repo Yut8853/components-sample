@@ -1,0 +1,47 @@
+body {
+    font-size: 14px;
+}
+
+.container {
+    width: 500px;
+    margin: 30px auto;
+}
+
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li a {
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: 8px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu li a.active {
+    background: #111;
+    color: aliceblue;
+}
+
+.menu li a:not(.active):hover {
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.content.active {
+    background: #111;
+    color: aliceblue;
+    display: block;
+    min-height: 150px;
+}
+
+.content {
+    display: none;
+    padding: 8px;
+}
